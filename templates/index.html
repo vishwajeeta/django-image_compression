@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <h2>Responsive "Meet The Team" Section</h2>
+    <p>Resize the browser window to see the effect.</p>
+    <br />
+
+    {% for dest in dests %}
+
+    <img src="{{ dest.image.url }}" alt="Jane" style="width: 100%" />
+
+    <h2>{{dest.name}}</h2>
+
+    {% endfor %}
+  </body>
+</html>
